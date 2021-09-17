@@ -9,6 +9,5 @@ x = [int(a) for a in re.findall(r'\w{4}', nflag)]
 M = [random.randint(2**(BITS-1), 2**(BITS)) for i in range(len(x))]
 S = sum([x[i]*M[i] for i in range(len(x))])
 
-print(x)
 print('M = %s' % M)
 print('S = %s' % S)
