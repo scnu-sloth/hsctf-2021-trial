@@ -1,0 +1,172 @@
+Addr          Code
+0000    mov r1,0x00
+0003    mov [r1],0x0A
+0006    inc r1
+0008    mov [r1],0x01
+0011    inc r1
+0013    mov [r1],0x0F
+0016    inc r1
+0018    mov [r1],0x08
+0021    inc r1
+0023    mov [r1],0x13
+0026    inc r1
+0028    mov [r1],0x7D
+0031    inc r1
+0033    mov [r1],0x5A
+0036    inc r1
+0038    mov [r1],0x1D
+0041    inc r1
+0043    mov [r1],0x01
+0046    inc r1
+0048    mov [r1],0x17
+0051    inc r1
+0053    mov [r1],0x79
+0056    inc r1
+0058    mov [r1],0x56
+0061    inc r1
+0063    mov [r1],0x13
+0066    inc r1
+0068    mov [r1],0x7E
+0071    inc r1
+0073    mov [r1],0x0F
+0076    inc r1
+0078    mov [r1],0x1A
+0081    inc r1
+0083    mov [r1],0x63
+0086    inc r1
+0088    mov [r1],0x1F
+0091    inc r1
+0093    mov [r1],0x11
+0096    inc r1
+0098    mov [r1],0x06
+0101    inc r1
+0103    mov [r1],0x1E
+0106    inc r1
+0108    mov [r1],0x0B
+0111    inc r1
+0113    mov [r1],0x13
+0116    inc r1
+0118    mov [r1],0x48
+0121    inc r1
+0123    mov [r1],0x1A
+0126    inc r1
+0128    mov [r1],0x11
+0131    inc r1
+0133    mov [r1],0x69
+0136    inc r1
+0138    mov [r1],0x1F
+0141    inc r1
+0143    mov [r1],0x44
+0146    inc r1
+0148    mov [r1],0x19
+0151    inc r1
+0153    mov [r1],0x13
+0156    inc r1
+0158    mov [r1],0x0E
+0161    inc r1
+0163    mov r1,0x57
+0166    putchar(r1)
+0168    mov r1,0x68
+0171    putchar(r1)
+0173    mov r1,0x61
+0176    putchar(r1)
+0178    mov r1,0x74
+0181    putchar(r1)
+0183    mov r1,0x20
+0186    putchar(r1)
+0188    mov r1,0x69
+0191    putchar(r1)
+0193    mov r1,0x73
+0196    putchar(r1)
+0198    mov r1,0x20
+0201    putchar(r1)
+0203    mov r1,0x79
+0206    putchar(r1)
+0208    mov r1,0x6F
+0211    putchar(r1)
+0213    mov r1,0x75
+0216    putchar(r1)
+0218    mov r1,0x72
+0221    putchar(r1)
+0223    mov r1,0x20
+0226    putchar(r1)
+0228    mov r1,0x66
+0231    putchar(r1)
+0233    mov r1,0x6C
+0236    putchar(r1)
+0238    mov r1,0x61
+0241    putchar(r1)
+0243    mov r1,0x67
+0246    putchar(r1)
+0248    mov r1,0x3F
+0251    putchar(r1)
+0253    mov r1,0x0A
+0256    putchar(r1)
+0258    mov r1,0x00
+0261    r2 = getchar()
+0263    push r2
+0265    inc r1
+0267    cmp r1,0x20
+0270    jnz 0261
+0272    mov r1,0x00
+0275    add [r1],0x40
+0278    inc r1
+0280    cmp r1,0x20
+0283    jnz 0275
+0285    mov r1,0x40
+0288    pop r2
+0290    sub r1,0x01
+0293    mov [r1],r2
+0296    cmp r1,0x20
+0299    jnz 0288
+0301    mov r1,0x20
+0304    mov r2,r1
+0307    sub r2,0x20
+0310    xor [r1],r2
+0313    inc r1
+0315    cmp r1,0x40
+0318    jnz 0304
+0320    mov r1,0x20
+0323    add [r1],0x20
+0326    inc r1
+0328    cmp r1,0x40
+0331    jnz 0323
+0333    mov r1,0x00
+0336    mov r2,0x20
+0339    xor [r1],0xCC
+0342    cmp [r1],[r2]
+0345    jnz 0393
+0347    inc r1
+0349    inc r2
+0351    cmp r1,0x20
+0354    jnz 0339
+0356    mov r1,0x52
+0359    putchar(r1)
+0361    mov r1,0x69
+0364    putchar(r1)
+0366    mov r1,0x67
+0369    putchar(r1)
+0371    mov r1,0x68
+0374    putchar(r1)
+0376    mov r1,0x74
+0379    putchar(r1)
+0381    mov r1,0x21
+0384    putchar(r1)
+0386    mov r1,0x0A
+0389    putchar(r1)
+0391    jmp 0428
+0393    mov r1,0x57
+0396    putchar(r1)
+0398    mov r1,0x72
+0401    putchar(r1)
+0403    mov r1,0x6F
+0406    putchar(r1)
+0408    mov r1,0x6E
+0411    putchar(r1)
+0413    mov r1,0x67
+0416    putchar(r1)
+0418    mov r1,0x21
+0421    putchar(r1)
+0423    mov r1,0x0A
+0426    putchar(r1)
+0428    exit
