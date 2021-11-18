@@ -1,4 +1,4 @@
-# hsctf-2021-trial
+# ISCNU x Sloth 网络安全研究组 2021 选拔赛 代码仓库
 
 ## 介绍
 
